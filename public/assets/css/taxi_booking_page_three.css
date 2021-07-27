@@ -1,0 +1,131 @@
+.page_three_section_two form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: '.';
+    gap:20px 20px;
+    margin-bottom: 30px;
+}
+.page_three_personal_detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: '. .';
+    gap:20px 20px;
+    margin-bottom: 20px;
+}
+.personal_detail_fields input{
+    width: 100%;
+    padding: 10px 5px;
+    outline: none;
+} 
+.personal_detail_comment input{
+    width: 100%;
+    padding: 10px 5px;
+    outline: none;   
+}
+.page_three_contact_header{
+padding: 10px 5px;
+background-color: #0070C0;
+color: #ffff;
+margin-bottom: 10px;
+}
+.page_three_payment_method{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.page_three_payment_method span{
+    border:1px solid gray;
+    border-radius: 4px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page_three_payment_method span i{
+font-size: 50px;
+color: #0070C0;
+}
+
+
+.page_three_continuous_btn{
+    display: flex;
+    justify-content: space-between;
+}
+.page_three_continuous_btn .back a{
+    background-color: #147b22;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    float: left;
+ }
+ .page_three_continuous_btn .back a:hover{
+   background-color: #fff;
+   color: #147b22;
+    border:2px solid #147b22;
+ }
+.page_three_continuous_btn .next a{
+    background-color: #0070C0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    float: left;
+ }
+ .page_three_continuous_btn .next a:hover{
+   background-color: #fff;
+   color: #0070C0;
+    border:2px solid #0070C0;
+ }
+
+
+ 
+     /* Responsive */
+    /*Tablet*/
+    @media (min-width: 768px) and (max-width: 1024px) {
+     
+   
+        }
+    
+    /*mobile rotation*/
+    @media (max-width: 767px) {
+        .page_one_vehical_selection .page_one_vehical {
+            grid-template-columns: 0.7fr 1fr;
+        }
+        .page_three_personal_detail {
+            grid-template-columns: 1fr;
+            grid-template-areas: '.';
+        }
+        .page_three_continuous_btn {
+            flex-direction: column;
+            align-items: center;
+        }
+        .page_three_continuous_btn .back{
+            margin-bottom: 10px;
+        }
+    }
+       /*mobile*/ 
+        @media (max-width: 540px) { 
+         
+            .page_one_vehical_selection .page_one_vehical {
+                grid-template-columns:1fr;
+            }
+        }
+        @media (max-width: 425px) { 
+           
+       
+        }
+        @media (max-width: 325px) { 
+    
+        
+        
+        }
